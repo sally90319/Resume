@@ -1,0 +1,436 @@
+/* 整體 */
+html,
+body {
+  background-color: #ecb75b;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Verdana,
+    Arial, Sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+div.background {
+  background-color: #fdeed2;
+  margin: 6.25rem 5rem 5rem 5rem;
+  border: 0.19rem solid black;
+  border-radius: 1.88rem;
+  padding: 2rem;
+}
+/* 導覽列 */
+ul.navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #3f7398;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+ul.navbar li a {
+  color: white;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  line-height: 1.88rem;
+  text-decoration: none;
+  margin-right: 1.56rem;
+  white-space: nowrap;
+}
+ul.navbar li a:hover {
+  background-color: white;
+  color: #3f7398;
+  border: 0.06rem solid white;
+  border-radius: 0.43rem;
+}
+.main-header {
+  scroll-margin-top: 5.25rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 50;
+  border: 0.19rem solid black;
+  border-radius: 0.43rem;
+  padding: 0 2rem;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  white-space: nowrap;
+}
+#contact-header,
+#certification-header,
+#language-header {
+  background-color: #d55e46;
+}
+#experience-header {
+  background-color: #ecb75b;
+}
+#skills-header {
+  background-color: #3f7398;
+}
+/* menu */
+button.menu {
+  display: none;
+}
+/* 自我介紹 */
+header {
+  background-color: #3f7398;
+  padding: 1rem;
+  border: 0.19rem solid black;
+  border-radius: 1.88rem;
+  height: 15%;
+  max-height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.right-text {
+  max-width: 80%;
+}
+div.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h1.t-name,
+h1.e-name {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+h1.t-name {
+  font-size: clamp(0.5rem, 4vw, 3.5rem);
+  text-shadow: 5px 5px 0 black;
+  word-break: keep-all;
+}
+h1.e-name {
+  font-size: clamp(0.3rem, 2.5vw, 2rem);
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  background-color: #d55e46;
+  border: 0.19rem solid #d55e46;
+  padding: 0 0.8rem 0.3rem 0.8rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0 black;
+}
+p.self-introtuciton {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  color: white;
+  line-height: 2;
+}
+/* 大頭貼 */
+.my-pic {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 20%;
+  margin: 0.3rem 2rem 0.3rem 1rem;
+}
+main {
+  max-height: 80%;
+}
+/* grid 區塊 */
+div.grid-container {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  row-gap: 3rem;
+  column-gap: 3rem;
+  margin-top: 3rem;
+}
+div.grid-item {
+  border: 0.19rem solid black;
+  border-radius: 1.88rem;
+  padding: 1rem 3rem;
+  position: relative;
+}
+/* 聯絡資訊 */
+div.contact-content {
+  grid-column: 1 / 7;
+  grid-row: 1 / 5;
+  background-color: #ecb75b;
+}
+div.phone-container,
+div.email-container {
+  display: flex;
+  align-items: center;
+}
+div.phone-container {
+  position: absolute;
+  top: 1.5rem;
+}
+div.email-container {
+  position: absolute;
+  bottom: 1rem;
+}
+span.phone,
+span.email {
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+  margin-right: 0.5rem;
+}
+h2.phone-number,
+h2.e-mail {
+  font-size: 1.5rem;
+  word-break: break-all;
+}
+/* 專長 */
+div.skills-content {
+  grid-column: 7 / 13;
+  grid-row: 1 / 6;
+  background-color: #d55e46;
+}
+ul.skills-list {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  line-height: 3rem;
+  margin-left: -3.5rem;
+  margin-top: 0;
+  list-style-position: inside;
+  display: flex;
+  justify-content: space-between;
+}
+li.wb-block,
+li.mo-block {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div.wb-content h3,
+div.mo-content h3 {
+  margin-bottom: 0.1rem;
+}
+ul.wb-list,
+ul.mo-list {
+  font-weight: bold;
+}
+img.web-development,
+img.microsoft-office {
+  width: 10em;
+  border: 0.19rem solid black;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0 black;
+  margin-top: 1rem;
+}
+/* 經歷 */
+div.experience-content {
+  grid-column: 1 / 7;
+  grid-row: 5 / 9;
+  background-color: #3f7398;
+}
+div.highlight {
+  font-size: clamp(0.8rem, 1.4vw, 1.1rem);
+  margin-top: 3rem;
+}
+div.highlight:hover {
+  width: 100%;
+  background: linear-gradient(to right, white, #3f7398);
+}
+/* 語言能力 */
+div.language-content {
+  grid-column: 7 / 13;
+  grid-row: 6 / 13;
+  background-color: #ecb75b;
+}
+table,
+th,
+td {
+  border: 0.19rem solid black;
+  border-radius: 10px;
+  word-break: keep-all;
+}
+table {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: white;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  font-weight: bold;
+  text-align: center;
+  border-spacing: 0.5rem;
+}
+tr.l-header {
+  height: 3rem;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+th.red {
+  background-color: #d55e46;
+  border: none;
+}
+th.no-border {
+  border: none;
+}
+td.star {
+  color: #ecb75b;
+}
+table.e-table {
+  margin-top: 3rem;
+}
+/* 證照 */
+div.certification-content {
+  grid-column: 1 / 7;
+  grid-row: 9 / 13;
+  background-color: #ecb75b;
+}
+div.certification-content ul {
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  line-height: 3rem;
+  list-style-position: inside;
+}
+ul.c-block {
+  margin-top: 3rem;
+}
+li.c-l-block,
+li.c-mo-block {
+  list-style-type: none;
+  margin-left: -3rem;
+}
+li.c-mo-block {
+  margin-bottom: 0;
+}
+li.c-l-block h3,
+li.c-mo-block h3 {
+  margin-bottom: 0.5rem;
+}
+li.c-l-block ul,
+li.c-mo-block ul {
+  font-weight: bold;
+}
+/* footer */
+div.footer {
+  border-left: 1rem solid #3f7398;
+  border-right: 1rem solid #3f7398;
+  padding: 2rem;
+  margin-top: 3rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  text-align: center;
+  max-height: 5%;
+}
+/* 跳回頁首動畫 */
+#top {
+  font-size: 3rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+/* 大平板 */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  /* 專長 */
+  ul.skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.skills-content {
+    grid-row: 1 / 8;
+  }
+  /* 語言 */
+  div.language-content {
+    grid-row: 8 / 13;
+  }
+  /* 聯絡資訊 */
+  h2.phone-number,
+  h2.e-mail {
+    font-size: 1.3rem;
+  }
+}
+/* 平板 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  div.grid-container {
+    column-gap: 2rem;
+  }
+  /* 專長 */
+  ul.skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.skills-content {
+    grid-row: 1 / 8;
+  }
+  /* 聯絡資訊 */
+  div.email-container,
+  div.phone-container {
+    margin-right: 3rem;
+  }
+  h2.phone-number,
+  h2.e-mail {
+    font-size: 1.2rem;
+  }
+  /* 語言 */
+  div.language-content {
+    grid-row: 8 / 13;
+    padding: 1rem 1rem;
+  }
+}
+/* 手機 */
+@media (max-width: 768px) {
+  /* 導覽列 */
+  ul.navbar {
+    justify-content: center;
+  }
+  ul.navbar li a {
+    margin: 0.8rem;
+  }
+  /* 自我介紹 */
+  h1.t-name {
+    text-shadow: 3px 3px 0 black;
+  }
+  .my-pic {
+    margin: 0rem 1rem 0rem 0.2rem;
+  }
+  div.grid-container {
+    column-gap: 1rem;
+  }
+  /* 聯絡資訊 */
+  div.contact-content {
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    order: 1;
+  }
+  div.phone-container,
+  div.email-container {
+    position: relative;
+    justify-content: center;
+  }
+  div.phone-container {
+    top: 0;
+  }
+  div.email-container {
+    bottom: 0;
+  }
+  h2.phone-number,
+  h2.e-mail {
+    font-size: 1.2rem;
+  }
+  /* 經歷 */
+  div.experience-content {
+    grid-column: 1 / 13;
+    grid-row: 2 / 4;
+    order: 2;
+  }
+  /* 專長 */
+  div.skills-content {
+    grid-column: 1 / 13;
+    grid-row: 4 / 8;
+    order: 3;
+  }
+  ul.skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.certification-content {
+    grid-column: 1 / 13;
+    grid-row: 8 / 10;
+    order: 4;
+  }
+  div.language-content {
+    grid-column: 1 / 13;
+    grid-row: 10 / 13;
+    order: 5;
+  }
+}
