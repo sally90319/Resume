@@ -1,0 +1,547 @@
+/* 整體 */
+html,
+body {
+  background-color: #ecb75b;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Verdana,
+    Arial, Sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+/* 導覽列 */
+ul.navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #3f7398;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+ul.navbar li a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  line-height: 1.88rem;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  white-space: nowrap;
+}
+ul.navbar li a:hover {
+  background-color: white;
+  color: #3f7398;
+  border: 0.06rem solid white;
+  border-radius: 0.43rem;
+}
+/* 區塊標題 */
+.main-header {
+  scroll-margin-top: 4.25rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 50;
+  border: 0.19rem solid black;
+  border-radius: 0.43rem;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+#contact-header,
+#language-header {
+  background-color: #d55e46;
+}
+#experience-header {
+  background-color: #ecb75b;
+}
+#skills-header,
+#certification-header {
+  background-color: #3f7398;
+}
+/* 米白背景 */
+div.background {
+  background-color: #fdeed2;
+  margin: 5.25rem 4rem 4rem 4rem;
+  border: 0.19rem solid black;
+  border-radius: 1.88rem;
+  padding: 1.5rem;
+}
+/* 自我介紹 */
+header {
+  background-color: #3f7398;
+  padding: 1rem;
+  border: 0.19rem solid black;
+  border-radius: 1.88rem;
+  height: 15%;
+  max-height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.right-text {
+  max-width: 80%;
+}
+div.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h1.t-name,
+h1.e-name {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+h1.t-name {
+  font-size: 2.5rem;
+  text-shadow: 5px 5px 0 black;
+  word-break: keep-all;
+}
+h1.e-name {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  background-color: #d55e46;
+  border: 0.19rem solid #d55e46;
+  padding: 0 0.8rem 0.3rem 0.8rem;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0 black;
+}
+p.self-introtuciton {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 2;
+}
+/* 大頭貼 */
+.my-pic {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 20%;
+  margin: 0 1.5rem 0 0.5rem;
+}
+main {
+  max-height: 80%;
+}
+/* grid 區塊 */
+div.grid-container {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+div.grid-item {
+  border: 0.19rem solid black;
+  border-radius: 1.88rem;
+  padding: 1rem 2rem;
+  position: relative;
+}
+/* 聯絡資訊 */
+div.contact-content {
+  grid-column: 1 / 7;
+  grid-row: 1 / 4;
+  background-color: #ecb75b;
+}
+div.p-e-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h2.phone-number,
+h2.e-mail {
+  font-size: 1.2rem;
+  word-break: break-all;
+}
+/* 專長 */
+div.skills-content {
+  grid-column: 7 / 13;
+  grid-row: 1 / 4;
+  background-color: #d55e46;
+}
+div.ski-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+}
+div.li-img {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+ul.skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+div.logo-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  margin-left: 2rem;
+}
+img.html,
+img.css {
+  width: 2.2rem;
+  border: 0.19rem solid black;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0 black;
+}
+/* 經歷 */
+div.experience-content {
+  grid-column: 7 / 13;
+  grid-row: 4 / 13;
+  background-color: #3f7398;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.highlight {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.43rem;
+}
+div.highlight:hover {
+  width: 100%;
+  background: #a9cde0;
+}
+li.line-2,
+p.line-2 {
+  line-height: 2;
+}
+/* 語言能力 */
+div.language-content {
+  grid-column: 1 / 7;
+  grid-row: 7 / 13;
+  background-color: #ecb75b;
+  width: 100%;
+  height: 100%;
+}
+table,
+th,
+td {
+  border: 0.19rem solid black;
+  border-radius: 10px;
+  word-break: keep-all;
+}
+table {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-spacing: 0.5rem;
+}
+div.all-table {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+tr.l-header {
+  height: 1.5rem;
+  font-size: 1.2rem;
+}
+th.red {
+  background-color: #d55e46;
+  border: none;
+}
+th.no-border {
+  border: none;
+}
+td.star {
+  color: #ecb75b;
+}
+table.e-table {
+  margin-top: 1rem;
+}
+table.j-table {
+  margin-bottom: 1rem;
+}
+/* 證照 */
+div.certification-content {
+  grid-column: 1 / 7;
+  grid-row: 4 / 7;
+  background-color: #d55e46;
+}
+div.certification-content ul {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  list-style-position: inside;
+}
+ul.c-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+li.c-l-block,
+li.c-mo-block {
+  list-style-type: none;
+  margin-left: -2rem;
+}
+li.c-l-block ul,
+li.c-mo-block ul {
+  font-weight: bold;
+  list-style-type: disc;
+}
+/* footer */
+div.footer {
+  border-left: 0.8rem solid #3f7398;
+  border-right: 0.8rem solid #3f7398;
+  padding: 2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  max-height: 5%;
+}
+/* 跳回頁首動畫 */
+#top {
+  font-size: 2rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: #3f7398;
+}
+#top:hover {
+  color: #fdeed2;
+}
+/* 平板 */
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* 導覽列 */
+  ul.navbar {
+    height: 3.5rem;
+  }
+  ul.navbar li a {
+    font-size: 1.2rem;
+    padding: 0.1rem 0.6rem;
+  }
+  .main-header {
+    font-size: 1.2rem;
+    scroll-margin-top: 3.8rem;
+  }
+  /* 米白背景 */
+  div.background {
+    margin: 4.25rem 3rem 3rem 3rem;
+    padding: 1rem;
+  }
+  /* 自我介紹 */
+  h1.t-name {
+    font-size: 2rem;
+    text-shadow: 3px 3px 0 black;
+  }
+  h1.e-name {
+    font-size: 1rem;
+  }
+  p.self-introtuciton {
+    font-size: 0.9rem;
+  }
+  div.grid-container {
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+  div.grid-item {
+    padding: 1rem;
+  }
+  /* 聯絡資訊 */
+  h2.phone-number,
+  h2.e-mail {
+    font-size: 1rem;
+  }
+  /* 專長 */
+  div.ski-block {
+    font-size: 1rem;
+  }
+  div.logo-pic {
+    margin-left: 1rem;
+  }
+  img.html,
+  img.css {
+    width: 1.8rem;
+    box-shadow: 0.1rem 0.1rem 0 black;
+  }
+  /* 經歷 */
+  div.highlight {
+    font-size: 0.8rem;
+  }
+  /* 語言能力 */
+  table {
+    font-size: 0.8rem;
+  }
+  tr.l-header {
+    height: 2rem;
+    font-size: 1rem;
+  }
+  /* 證照 */
+  div.certification-content ul {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  div.footer {
+    border-left: 0.5rem solid #3f7398;
+    border-right: 0.5rem solid #3f7398;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  #top {
+    font-size: 1.8rem;
+    bottom: 15px;
+    right: 13px;
+  }
+}
+/* 手機 */
+@media (max-width: 768px) {
+  /* 導覽列 */
+  ul.navbar {
+    height: 3rem;
+    justify-content: space-around;
+  }
+  ul.navbar li a {
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.08rem 0.4rem;
+  }
+  .main-header {
+    font-size: 1rem;
+    padding: 0 1rem;
+    scroll-margin-top: 3.2rem;
+  }
+  /* 米白背景 */
+  div.background {
+    margin: 3.5rem 1.5rem 1.5rem 1rem;
+    padding: 0.8rem;
+  }
+  /* 自我介紹 */
+  header {
+    padding: 0.5rem;
+  }
+  h1.t-name {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 0 black;
+    margin-top: 0.5rem;
+  }
+  h1.e-name {
+    font-size: 0.5rem;
+    padding: 0 0.5rem 0.1rem 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0 black;
+    margin-left: 1rem;
+  }
+  p.self-introtuciton {
+    font-size: 0.7rem;
+  }
+  .my-pic {
+    margin: 0rem 0.8rem 0rem 0.2rem;
+  }
+  div.grid-container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  div.grid-item {
+    padding: 0.8rem;
+  }
+  /* 聯絡資訊 */
+  div.contact-content {
+    grid-column: 1 / 13;
+    grid-row: 1 / 2;
+    order: 1;
+  }
+  div.p-e-block {
+    align-items: center;
+  }
+  h2.phone-number,
+  h2.e-mail {
+    font-size: 0.75rem;
+  }
+  /* 專長 */
+  div.skills-content {
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    order: 2;
+  }
+  div.ski-block {
+    font-size: 0.7rem;
+  }
+  div.logo-pic {
+    margin-left: 0.5rem;
+  }
+  img.html,
+  img.css {
+    width: 1.4rem;
+    box-shadow: 0.05rem 0.05rem 0 black;
+  }
+  /* 證照 */
+  div.certification-content {
+    grid-column: 1 / 13;
+    grid-row: 3 / 6;
+    order: 3;
+  }
+  div.certification-content ul {
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+  }
+  /* 經歷 */
+  div.experience-content {
+    grid-column: 1 / 13;
+    grid-row: 6 / 10;
+    order: 4;
+  }
+  div.highlight {
+    font-size: 0.7rem;
+  }
+  /* 語言能力 */
+  div.language-content {
+    grid-column: 1 / 13;
+    grid-row: 10 / 13;
+    order: 5;
+  }
+  table {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+  tr.l-header {
+    height: 1rem;
+    font-size: 0.9rem;
+  }
+  table.j-table {
+    margin-bottom: 1rem;
+  }
+  div.footer {
+    font-size: 0.7rem;
+    border-left: 0.3rem solid #3f7398;
+    border-right: 0.3rem solid #3f7398;
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
+  #top {
+    font-size: 1.5rem;
+    bottom: 10px;
+    right: 4px;
+  }
+}

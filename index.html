@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>張慈芳的個人履歷網站</title>
+    <meta
+      name="keywords"
+      content="前端工程師, Front-End Developer, 張慈芳, Sally, 聯絡資訊, Contact Information, 專長, Skills, 經歷, Experience, 語言能力, Language Skills, 證照, Certification"
+    />
+    <meta
+      name="description"
+      content="畢業於國立臺中科技大學應用英語系，具有3年的工作經驗，已自學習得了 HTML、CSS、JavaScript，並仍在持續精進網頁開發技術，希望未來能為貴公司貢獻所學。"
+    />
+    <link rel="stylesheet" href="Resume.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/649fa1262b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <nav>
+      <div>
+        <ul class="navbar">
+          <li><a href="#contact-header">聯絡資訊</a></li>
+          <li><a href="#skills-header">專長</a></li>
+          <li><a href="#certification-header">證照</a></li>
+          <li><a href="#experience-header">經歷</a></li>
+          <li><a href="#language-header">語言能力</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 底層背景 -->
+    <div class="background">
+      <!-- 自我介紹 -->
+      <header>
+        <img src="mypic.jpg" alt="張慈芳的大頭照" class="my-pic" />
+        <div class="right-text">
+          <div class="name">
+            <h1 class="t-name">張慈芳</h1>
+            <h1 class="e-name">Sally</h1>
+          </div>
+          <p class="self-introtuciton">
+            畢業於國立臺中科技大學應用英語系，具有 3年
+            工作經驗，已自學了HTML、CSS、JavaScript，並仍在持續精進網頁開發技術，希望未來能為貴公司貢獻所學。
+          </p>
+        </div>
+      </header>
+      <main>
+        <div class="grid-container">
+          <!-- 聯絡資訊 -->
+          <div class="contact-content grid-item">
+            <h1 id="contact-header" class="main-header">聯絡資訊</h1>
+            <div class="p-e-block">
+              <h2 class="phone-number">電話：＊＊＊＊-＊＊＊＊＊＊</h2>
+              <h2 class="e-mail">信箱：＊＊＊＊＊＊@gmail.com</h2>
+            </div>
+          </div>
+          <!-- 專長 -->
+          <div class="skills-content grid-item">
+            <h1 id="skills-header" class="main-header">專長</h1>
+            <div class="ski-block">
+              <h3>Web Development</h3>
+              <div class="li-img">
+                <ul class="skills-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <div class="logo-pic">
+                  <img src="HTML logo.jpeg" alt="HTML logo" class="html" />
+                  <img src="CSS Logo.jpeg" alt="CSS logo" class="css" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 經歷 -->
+          <div class="experience-content grid-item">
+            <h1 id="experience-header" class="main-header">經歷</h1>
+            <div class="highlight">
+              <h2>2021 - 目前</h2>
+              <h3>就職「三揚精品商旅」擔任 櫃檯接待人員</h3>
+              <ul>
+                <li class="line-2">
+                  細心謹慎：仔細確認客人的特殊需求，與相關部門再次核對。
+                </li>
+                <li class="line-2">
+                  靈活應變：遇到系統更新或流程變更，我能快速學習並適應。
+                </li>
+                <li class="line-2">
+                  問題解決：遇到重複訂房的年長客人，主動協助聯繫訂房平台英文客服，以避免取消訂房的費用，獲得了客人的高度評價。
+                </li>
+              </ul>
+            </div>
+            <div class="highlight">
+              <h2>2018/01 - 2018/12</h2>
+              <h3>擔任「國立臺中科技大學應用英語系」系學會會長</h3>
+              <p class="line-2">
+                曾舉辦「跨系語文週、二手拍賣、迎新宿營」等等活動，過程中我的首要重點是使用者體驗，我會依據前次活動的回饋調整內容，同時我也學習到如何與不同類型的人團隊合作，累積了一些跨部門的溝通經驗。
+              </p>
+            </div>
+            <div class="highlight">
+              <h2>2016/09 - 2020/06</h2>
+              <h3>就讀「國立臺中科技大學應用英語系」</h3>
+              <ul>
+                <li class="line-2">多益815分：能快速理解英文技術文件。</li>
+                <li class="line-2">
+                  日語N5檢定：曾日本遊學一個月，具備處理日文業務的能力。
+                </li>
+                <li class="line-2">
+                  Word、PowerPoint、Excel 證照：使我能有效率地處理各類資料。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 語言能力 -->
+          <div class="language-content grid-item">
+            <h1 id="language-header" class="main-header">語言能力</h1>
+            <div class="all-table">
+              <table class="e-table">
+                <thead>
+                  <tr class="l-header">
+                    <th colspan="4" class="red">英文</th>
+                  </tr>
+                  <tr>
+                    <th class="no-border">&nbsp;</th>
+                    <th class="red">略懂</th>
+                    <th class="red">中等</th>
+                    <th class="red">精通</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="red">聽</th>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="star">&#9733;</td>
+                  </tr>
+                  <tr>
+                    <th class="red">說</th>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="star">&#9733;</td>
+                  </tr>
+                  <tr>
+                    <th class="red">讀</th>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="star">&#9733;</td>
+                  </tr>
+                  <tr>
+                    <th class="red">寫</th>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="star">&#9733;</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="j-table">
+                <thead>
+                  <tr class="l-header">
+                    <th colspan="4" class="red">日文</th>
+                  </tr>
+                  <tr>
+                    <th class="no-border">&nbsp;</th>
+                    <th class="red">略懂</th>
+                    <th class="red">中等</th>
+                    <th class="red">精通</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="red">聽</th>
+                    <td class="star">&#9733;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th class="red">說</th>
+                    <td class="star">&#9733;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th class="red">讀</th>
+                    <td class="star">&#9733;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th class="red">寫</th>
+                    <td class="star">&#9733;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- 證照 -->
+          <div class="certification-content grid-item">
+            <h1 id="certification-header" class="main-header">證照</h1>
+            <ul class="c-block">
+              <li class="c-l-block">
+                <h3>語言證照</h3>
+                <ul>
+                  <li>TOEIC 815分</li>
+                  <li>JLPT N5</li>
+                </ul>
+              </li>
+              <li class="c-mo-block">
+                <h3>Microsoft Office 證照</h3>
+                <ul>
+                  <li>BAP商務專業應用能力國際認證-Word</li>
+                  <li>TQC-OA-PowerPoint</li>
+                  <li>TQC-OA-Excel</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          雖然目前還沒有相關經驗，但我具備持續主動學習的熱情、團隊合作的經驗、細心謹慎的態度、靈活的適應能力及勇於挑戰的精神，希望未來能應用我的能力及經歷為貴公司貢獻所學。
+        </div>
+      </footer>
+    </div>
+    <i class="fa-solid fa-arrow-up fa-bounce fa-lg" id="top"></i>
+    <script>
+      document.getElementById("top").onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+  </body>
+</html>
